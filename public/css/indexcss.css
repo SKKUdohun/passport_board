@@ -1,0 +1,32 @@
+
+title {
+    text-align : right;
+}
+
+table {
+    width: 100%;
+
+}
+
+th {
+    border: 1px solid #999;
+}
+
+h1{
+    width: 100px;
+    margin: 0 auto;
+}
+
+td{
+    text-align: center;
+    width: 33%;
+}
+
+
+
+tr.row:hover {
+    background-color: #999999;
+}
+
+
+
