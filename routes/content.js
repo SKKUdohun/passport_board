@@ -8,13 +8,15 @@ const fs = require('fs');
 const multer = require('multer');
 const multiparty = require('multiparty');
 
+router.use(express.static('public'));
+
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 //router.use(multer());
 
 var Storage = multer.diskStorage({
   destination:function(req,file, cb){
-    cb(null, 'C:/Users/dohun/Desktop/dev/brackets-nodejs/passportExample/public/uploadimage')
+    cb(null, './public/uploadimage')
   },
   /*
   filename: function(req,file,cb){
